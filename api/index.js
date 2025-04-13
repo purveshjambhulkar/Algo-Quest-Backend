@@ -193,7 +193,7 @@ app.delete('/api/problems/:id', async (req, res) => {
     }
     
     // Validate admin password
-    const expectedPassword = process.env.VITE_ADMIN_PASSWORD || 'admin123';
+    const expectedPassword = 'dsadsa';
     if (adminPassword !== expectedPassword) {
       return res.status(403).json({ 
         success: false, 
