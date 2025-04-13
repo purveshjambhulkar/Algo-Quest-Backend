@@ -15,7 +15,7 @@ app.use(express.json());
 // Database connection
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/coding-practice');
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://purveshjambhulkar16:wzynTleSmEoZPr54@cluster0.7daen0o.mongodb.net/');
     console.log('MongoDB connected successfully');
     return true;
   } catch (error) {
